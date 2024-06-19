@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.login-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.logo .green {
+    color: green;
+}
+
+.tagline {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.instruction {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password, .signin-link, .login-link {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #2626e4;
+    text-decoration: none;
+}
+
+.forgot-password:hover, .signin-link:hover, .login-link:hover {
+    text-decoration: underline;
+}
+
+form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #333;
+}

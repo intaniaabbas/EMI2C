@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Type Selection</title>
+    <link rel="stylesheet" href="private-transport.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="selection.html" class="logo">E M I <span class="green">2</span> C</a>
+            <p class="tagline">Track Carbon, Transform Cities!</p>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="history.html">History</a>
+            <a href="selection.html">Transport</a>
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </header>
+
+    <main>
+        <div class="header-container">
+            <h2>Private Transportation</h2>
+            <p>Please input information below to calculate CO2.</p>
+        </div>
+
+        <form id="co2Form">
+        <div class="all-form">
+            <label for="vehicleType">Vehicle Type</label>
+            <select id="vehicleType" name="vehicleType" required>
+                <option value="0">Car</option>
+                <option value="8">Motorcycle</option>
+            </select>
+
+            <label for="fuelType">Fuel Type</label>
+            <select id="fuelType" name="fuelType" required>
+                <option value="3">Diesel</option>
+                <option value="0">Gasoline</option>
+                <option value="6">Hybrid</option>
+            </select>
+
+            <label for="engineCapacity">Engine Capacity</label>
+            <select id="engineCapacity" name="engineCapacity" required>
+                <option value="0">Less than 1400 CC (for Motorcycle less than 125 CC)</option>
+                <option value="1">Between 1400 - 2000 CC (for Motorcycle Between than 125-500 CC)</option>
+                <option value="2">More than 2000 CC (for Motorcycle more than 500 CC)</option>
+            </select>
+
+            <label for="tripDistance">Trip Distance</label>
+            <input type="number" id="tripDistance" placeholder="KM" required>
+        </div>
+
+            <div class="additional-options">
+                <input type="checkbox" id="saveTrip" name="saveTrip">
+                <label for="saveTrip">Would you like to save this trip?</label>
+            </div>
+
+            <div class="switch-container">
+                <a href="public-transport.html" class="switch-link">
+                    <span>&#8646; Change to Public Transportation</span>
+                </a>
+            </div>
+
+            <button type="submit" class="calculate-button">Calculate</button>
+            <div class="loading-message" id="loadingMessage">Loading...</div>
+            <div class="result-message" id="resultMessage"></div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="history.html">History</a>
+            <a href="about-us.html">About Us</a>
+            <a href="#how-it-works">How It Works</a>
+    
+        </div>
+        <div class="social-media">
+            <a href="https://twitter.com/Emi2C" target="_blank">@Emi2C</a>
+            <a href="https://instagram.com/Emi2C" target="_blank">@Emi2C</a>
+        </div>
+    </footer>
+
+    <script src="private-transport.js"></script>
+    <script src="global.js"></script>
+</body>
+</html>

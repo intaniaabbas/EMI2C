@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 3px solid #007BFF;
+    background-color: #fff;
+}
+
+.logo-container {
+    text-align: left;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-container span {
+    color: green;
+}
+
+.tagline {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.main {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.header-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-container p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.all-form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 154px;
+}
+
+.all-form select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.all-form input {
+    width: 78.5%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.additional-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.additional-options input {
+    margin-left: 156px;
+    margin-bottom: 20px;
+    align-items: end;
+    height: 20px;
+}
+
+.additional-options label {
+    margin-bottom: 15px;
+    text-align: start;
+    margin-left: 10px;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 78px;
+    margin-bottom: 10px;
+    margin-top: -57px; 
+}
+
+.switch-link {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.switch-link span {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 76px;
+    vertical-align: top;
+}
+
+.calculate-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.loading-message, .result-message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.loading-message {
+    display: none;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-img, .right-img {
+    width: 100px;
+    height: auto;
+}
+
+.right-img {
+    float: right;
+}
+
+.left-img {
+    float: left;
+}
